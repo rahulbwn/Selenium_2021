@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="8" total="11" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-02-21T12:11:11 IST" name="Regression" finished-at="2021-02-21T12:11:12 IST" duration-ms="237">
+    <groups>
+      <group name="Smoke">
+        <method signature="CarLoanLogin.mobileCarLogin()[pri:0, instance:Test.CarLoanLogin@6ac13091]" name="mobileCarLogin" class="Test.CarLoanLogin"/>
+        <method signature="DemoTest.Test2()[pri:0, instance:Test.DemoTest@5e316c74]" name="Test2" class="Test.DemoTest"/>
+        <method signature="HomeLoanLogin.APIHomeLogin()[pri:0, instance:Test.HomeLoanLogin@6d2a209c]" name="APIHomeLogin" class="Test.HomeLoanLogin"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test started-at="2021-02-21T12:11:11 IST" name="Smoke" finished-at="2021-02-21T12:11:12 IST" duration-ms="237">
+      <class name="Test.CarLoanLogin">
+        <test-method signature="mobileCarLogin()[pri:0, instance:Test.CarLoanLogin@6ac13091]" started-at="2021-02-21T12:11:11 IST" name="mobileCarLogin" finished-at="2021-02-21T12:11:11 IST" duration-ms="38" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobileCarLogin -->
+      </class> <!-- Test.CarLoanLogin -->
+      <class name="Test.HomeLoanLogin">
+        <test-method signature="APIHomeLogin()[pri:0, instance:Test.HomeLoanLogin@6d2a209c]" started-at="2021-02-21T12:11:11 IST" name="APIHomeLogin" finished-at="2021-02-21T12:11:11 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- APIHomeLogin -->
+      </class> <!-- Test.HomeLoanLogin -->
+      <class name="Test.DemoTest">
+        <test-method signature="Test2()[pri:0, instance:Test.DemoTest@5e316c74]" started-at="2021-02-21T12:11:11 IST" name="Test2" finished-at="2021-02-21T12:11:11 IST" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Test2 -->
+      </class> <!-- Test.DemoTest -->
+    </test> <!-- Smoke -->
+  </suite> <!-- Regression -->
+</testng-results>
