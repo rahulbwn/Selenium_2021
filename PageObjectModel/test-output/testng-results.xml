@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-03-03T13:53:10 IST" name="Default suite" finished-at="2021-03-03T13:53:35 IST" duration-ms="24626">
+  <suite started-at="2021-03-05T21:56:41 IST" name="Default suite" finished-at="2021-03-05T21:57:04 IST" duration-ms="22570">
     <groups>
     </groups>
-    <test started-at="2021-03-03T13:53:10 IST" name="Default test" finished-at="2021-03-03T13:53:35 IST" duration-ms="24626">
+    <test started-at="2021-03-05T21:56:41 IST" name="Default test" finished-at="2021-03-05T21:57:04 IST" duration-ms="22570">
       <class name="TestCases.LoginPageDemo">
-        <test-method signature="LoginPage()[pri:0, instance:TestCases.LoginPageDemo@2a32de6c]" started-at="2021-03-03T13:53:11 IST" name="LoginPage" finished-at="2021-03-03T13:53:35 IST" duration-ms="24498" status="FAIL">
+        <test-method signature="LoginPage()[pri:0, instance:TestCases.LoginPageDemo@2a32de6c]" started-at="2021-03-05T21:56:41 IST" name="LoginPage" finished-at="2021-03-05T21:57:04 IST" duration-ms="22446" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Yippie! The ID you've chosen is available.] but found [Checking availability...]]]>
@@ -20,7 +20,7 @@ at org.testng.Assert.assertEqualsImpl(Assert.java:140)
 at org.testng.Assert.assertEquals(Assert.java:122)
 at org.testng.Assert.assertEquals(Assert.java:629)
 at org.testng.Assert.assertEquals(Assert.java:639)
-at TestCases.LoginPageDemo.LoginPage(LoginPageDemo.java:33)
+at TestCases.LoginPageDemo.LoginPage(LoginPageDemo.java:42)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)

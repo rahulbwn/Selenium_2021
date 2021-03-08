@@ -9,7 +9,7 @@ public class RediffLoginPage {
 	WebDriver driver;
 	
 	public  RediffLoginPage(WebDriver driver)
-	{
+	{    
 		this.driver=driver;
 	}
 	By username=By.xpath("//input[@id=\"login1\"]");

@@ -13,7 +13,7 @@ public class RediffSignupPage {
 		this.driver=driver;
 	}
 	
-	By desiredUserName=By.cssSelector("#tblcrtac > tbody > tr:nth-child(7) > td:nth-child(3) > input[type=text]:nth-child(1)");
+	By desiredUserName=By.xpath("//input[contains(@name,\"login\")]");
 	By checkAvailablity=By.xpath("//input[@value='Check availability']");
 	By verifyText=By.cssSelector("#check_availability > font > b");
 	

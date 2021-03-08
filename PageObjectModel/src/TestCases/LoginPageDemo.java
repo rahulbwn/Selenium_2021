@@ -2,18 +2,23 @@ package TestCases;
 
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import ObjectRepositories.RediffLoginPage;
-import ObjectRepositories.RediffSignupPage;
+
+import ObjectRepositories.RediffSignupPagePF;
 
 public class LoginPageDemo {
 	
 	@Test
-	public void LoginPage() 
+	public void LoginPage()
 	{
 	System.setProperty("webdriver.chrome.driver", "C:\\chromedriver_win32\\chromedriver.exe");
 	WebDriver driver= new ChromeDriver();
@@ -25,12 +30,19 @@ public class LoginPageDemo {
 	rl.signupPage().click();
 	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	
-	RediffSignupPage rsign=new RediffSignupPage(driver);
+	RediffSignupPagePF rsign=new RediffSignupPagePF(driver);
 	rsign.desiredUserName().sendKeys("middharkm7717");
-	rsign.checkAvailablity().click();
+	rsign.checkAvailablity().click();  
 	
+	
+	WebDriverWait wait = new WebDriverWait(driver,10);
+	
+	wait.until(ExpectedConditions.visibilityOf(rsign.verifyText()));
 	String ActualText=rsign.verifyText().getText();
-	Assert.assertEquals(ActualText,"Yippie! The ID you've chosen is available.");
+	String ExpectedText="Yippie! The ID you've chosen is available.";
+	Assert.assertEquals(ActualText,ExpectedText);
+
+		driver.close();
 	}
 
 }
